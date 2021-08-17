@@ -1,0 +1,264 @@
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+
+html {
+    height: 100vh;
+    /*scroll-snap-type: y mandatory;*/
+}
+
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+
+
+section {
+    min-height: 100vh;
+    margin: 0 auto;
+    width: 100vw
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 3.125em 0;
+    overflow: hidden;
+    
+}
+
+.container-full-width {
+    width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3em;
+}
+
+
+
+.back-btn {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 48px;
+}
+
+
+
+
+.intro {
+    text-align: left;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    overflow: hidden;
+
+    position: relative;
+
+    background-image: url(images/trippy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.808);
+    background-attachment: fixed;
+
+
+}
+
+.intro .col {
+    min-height: 100%;
+}
+
+#title {
+    min-height: 105%;
+    z-index: 20;
+}
+
+.row {
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #cccccc;
+    /*font-size: 3rem;*/
+    color: #ffffff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    /*border-radius: 4px;*/
+    transition: all 500ms;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card:hover {
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+    transform: translateY(-2px) scale(1.010);
+}
+
+.card-full-width {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    color: #ffffff;
+    box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+    height: 100%;
+    width: 100%;
+    /*border-radius: 4px;*/
+    transition: all 500ms;
+    overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#portfolio {
+    overflow: hidden;
+}
+
+
+@media screen and (min-width: 600px){
+    .card-tall {
+        grid-row: span 2 / auto;
+    }
+    
+    .card-wide {
+        grid-column: span 2 / auto;
+    }
+}
+
+/* card tall and wide classes to make card class items wider or taller by 2 rows or columns      */
+
+
+#one {
+    /*height: 240px;*/
+    background-image: url(images/Alan.jpg);
+}
+
+#two {
+    /*height: 240px;*/
+    background-image: url(images/dates-in-the-box.jpg);
+}
+
+#three {
+    /*height: 240px;*/
+    background-image: url(images/eng-vs-ger.jpg);
+}
+
+#four {
+    /*height: 240px;*/
+    background-image: url(images/handthing.jpg);
+}
+
+#five {
+    /*height: 240px;*/
+    background-image: url(images/ian-curtis.jpg);
+}
+
+#six {
+    /*height: 240px;*/
+    background-image: url(images/fits-and-giggles.jpg);
+}
+
+#seven {
+    /*height: 240px;*/
+    background-image: url(images/texas-c-m.jpg);
+}
+
+#eight {
+    /*height: 240px;*/
+    background-image: url(images/falling-down.jpg);
+}
+
+#nine {
+    /*height: 240px;*/
+    background-image: url(images/THHE.jpg);
+}
+
+#ten {
+    /*height: 240px;*/
+    background-image: url(images/leatherface.jpg);
+}
+
+#eleven {
+    /*height: 240px;*/
+    background-image: url(images/fanta-grape.jpg);
+}
+
+#twelve {
+    /*height: 240px;*/
+    background-image: url(images/trippy.jpg)
+}
+
+#thirteen {
+    background-image: url(images/fp-1.jpg)
+}
+#fourteen {
+    background-image: url(images/bedroom.jpg)
+}
+#fifteen {
+    background-image: url(images/fight-club.jpg)
+}
+#sixteen {
+    background-image: url(images/granton-star.jpg)
+}
+#seventeen {
+    background-image: url(images/blur-style.jpg)
+}
+
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 240px;
+    margin: 0;
+    z-index: 20;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 900px) {
+    
+   
+
+    .row {
+        display: flex;
+        align-items: left;
+        min-height: 100vh;
+    }
+
+  
+    
+}
